@@ -3,7 +3,7 @@
     package="com.padcmyanmar.poc_screen_implementation">
 
     <application
-        android:name=".POCScreenImplementationApp"
+        android:name=".POCApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
