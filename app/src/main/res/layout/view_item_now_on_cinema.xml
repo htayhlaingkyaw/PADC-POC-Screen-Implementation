@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_medium"
                 android:layout_marginTop="@dimen/margin_medium"
-                android:text="It"
+                android:text="Blade Runner 2049"
                 android:textColor="@color/primary_text" />
 
             <TextView
@@ -78,7 +78,7 @@
                 android:layout_alignStart="@id/tv_cinema_name"
                 android:layout_below="@id/tv_cinema_name"
                 android:layout_marginTop="@dimen/margin_medium"
-                android:text="(Drama, Horror, Thriller)"
+                android:text="(Action, Thriller,Science)"
                 android:textColor="@color/primary_text"
                 android:textStyle="bold" />
 
