@@ -10,16 +10,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.padcmyanmar.poc_screen_implementation.R;
-import com.padcmyanmar.poc_screen_implementation.adapters.NowOnCinemaAdapter;
+import com.padcmyanmar.poc_screen_implementation.adapters.NowOnMovieAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NowOnCinemaFragment extends Fragment {
+public class NowOnMovieFragment extends Fragment {
 
     RecyclerView rvNowOnCinema;
 
-    public NowOnCinemaFragment() {
+    public NowOnMovieFragment() {
         // Required empty public constructor
     }
 
@@ -32,8 +32,8 @@ public class NowOnCinemaFragment extends Fragment {
         rvNowOnCinema = view.findViewById(R.id.rv_now_on_cinema);
         rvNowOnCinema.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
 
-        NowOnCinemaAdapter nowOnCinemaAdapter = new NowOnCinemaAdapter(getContext());
-        rvNowOnCinema.setAdapter(nowOnCinemaAdapter);
+        NowOnMovieAdapter nowOnMovieAdapter = new NowOnMovieAdapter(getContext());
+        rvNowOnCinema.setAdapter(nowOnMovieAdapter);
 
         return view;
     }

@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.padcmyanmar.poc_screen_implementation.R;
-import com.padcmyanmar.poc_screen_implementation.adapters.CinemaFragmentPagerAdapter;
+import com.padcmyanmar.poc_screen_implementation.adapters.MovieFragmentPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Movie Shelf");
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         vpCinema = findViewById(R.id.vp_cinema);
-        PagerAdapter pagerAdapter = new CinemaFragmentPagerAdapter(getSupportFragmentManager());
+        PagerAdapter pagerAdapter = new MovieFragmentPagerAdapter(getSupportFragmentManager());
         vpCinema.setAdapter(pagerAdapter);
 
         TabLayout tabLayoutCinema = findViewById(R.id.tl_cinema);

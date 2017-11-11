@@ -5,16 +5,16 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.padcmyanmar.poc_screen_implementation.fragments.MostPopularFragment;
-import com.padcmyanmar.poc_screen_implementation.fragments.NowOnCinemaFragment;
+import com.padcmyanmar.poc_screen_implementation.fragments.NowOnMovieFragment;
 import com.padcmyanmar.poc_screen_implementation.fragments.UpcomingFragment;
 
 /**
  * Created by HHK on 11/10/2017.
  */
 
-public class CinemaFragmentPagerAdapter extends FragmentPagerAdapter {
+public class MovieFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public CinemaFragmentPagerAdapter(FragmentManager fm) {
+    public MovieFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
@@ -22,7 +22,7 @@ public class CinemaFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new NowOnCinemaFragment();
+                return new NowOnMovieFragment();
             case 1:
                 return new UpcomingFragment();
             case 2:
