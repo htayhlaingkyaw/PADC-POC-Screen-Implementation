@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+
 import com.padcmyanmar.poc_screen_implementation.R;
 import com.padcmyanmar.poc_screen_implementation.data.vo.MovieVO;
 import com.padcmyanmar.poc_screen_implementation.delegates.MovieItemDelegate;
@@ -19,7 +20,7 @@ import butterknife.OnClick;
 
 
 /**
- * Created by User on 11/9/2017.
+ * Created by HHK on 11/9/2017.
  */
 
 public class MovieViewHolder extends BaseViewHolder<MovieVO> {
@@ -47,7 +48,7 @@ public class MovieViewHolder extends BaseViewHolder<MovieVO> {
         mMovie = movie;
 
         Glide.with(ivPoster.getContext())
-                .load("http://padcmyanmar.com/padc-3/popular-movies/apis" + movie.getPosterPath())
+                .load("https://image.tmdb.org/t/p/original" + movie.getPosterPath())
                 .into(ivPoster);
 
         tvVoteAverage.setText(String.valueOf(movie.getVoteAverage()));
@@ -56,9 +57,8 @@ public class MovieViewHolder extends BaseViewHolder<MovieVO> {
 
     @OnClick(R.id.btn_movie_overview)
     public void onTapMovieOverview(View view){
-        mDelegate.onTapMovieOverview(mMovie);
-    }
 
+    }
 
     @Override
     public void onClick(View view) {

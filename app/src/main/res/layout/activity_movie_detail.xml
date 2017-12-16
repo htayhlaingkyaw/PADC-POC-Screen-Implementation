@@ -110,7 +110,7 @@
                 android:layout_marginLeft="@dimen/margin_medium"
                 android:layout_marginRight="@dimen/margin_medium">
 
-                <mayphoo.mpk.poc_screenimplementation.components.SmartRecyclerView
+                <com.padcmyanmar.poc_screen_implementation.components.SmartRecyclerView
                     android:id="@+id/rv_trailer_movies"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>

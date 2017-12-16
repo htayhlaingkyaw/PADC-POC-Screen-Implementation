@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PADC-POC-Screen-Implementation.iml" filepath="$PROJECT_DIR$/PADC-POC-Screen-Implementation.iml" />
+      <module fileurl="file://E:\PADC\PADC-3\PADC-POC-Screen-Implementation\PADC-POC-Screen-Implementation.iml" filepath="E:\PADC\PADC-3\PADC-POC-Screen-Implementation\PADC-POC-Screen-Implementation.iml" />
       <module fileurl="file://C:\Users\HHK\Desktop\New folder (7)\POC-Screen-Implementation-master\POC-Screen-Implementation.iml" filepath="C:\Users\HHK\Desktop\New folder (7)\POC-Screen-Implementation-master\POC-Screen-Implementation.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\PADC\PADC-3\PADC-POC-Screen-Implementation\app\app.iml" filepath="E:\PADC\PADC-3\PADC-POC-Screen-Implementation\app\app.iml" />
       <module fileurl="file://C:\Users\HHK\Desktop\New folder (7)\POC-Screen-Implementation-master\app\app.iml" filepath="C:\Users\HHK\Desktop\New folder (7)\POC-Screen-Implementation-master\app\app.iml" />
     </modules>
   </component>
