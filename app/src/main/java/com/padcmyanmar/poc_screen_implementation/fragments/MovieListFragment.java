@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.padcmyanmar.poc_screen_implementation.R;
+import com.padcmyanmar.poc_screen_implementation.activities.MovieDetailActivity;
 import com.padcmyanmar.poc_screen_implementation.activities.MovieOverviewActivity;
 import com.padcmyanmar.poc_screen_implementation.adapters.MovieAdapter;
 import com.padcmyanmar.poc_screen_implementation.components.EmptyViewPod;
@@ -104,5 +105,11 @@ public class MovieListFragment extends Fragment implements MovieItemDelegate {
         Intent intent = MovieOverviewActivity.newIntent(getContext(), movie);
         startActivity(intent);
 
+    }
+
+    @Override
+    public void onTapMovie(MovieVO movie) {
+        Intent intent = MovieDetailActivity.newIntent(getContext(), movie);
+        startActivity(intent);
     }
 }

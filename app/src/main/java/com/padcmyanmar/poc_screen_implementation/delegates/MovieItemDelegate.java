@@ -10,4 +10,5 @@ import com.padcmyanmar.poc_screen_implementation.data.vo.MovieVO;
 public interface MovieItemDelegate {
 
     void onTapMovieOverview(MovieVO movie);
+    void onTapMovie(MovieVO movie);
 }

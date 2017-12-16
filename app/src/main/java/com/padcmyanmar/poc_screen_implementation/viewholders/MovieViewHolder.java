@@ -59,8 +59,9 @@ public class MovieViewHolder extends BaseViewHolder<MovieVO> {
         mDelegate.onTapMovieOverview(mMovie);
     }
 
+
     @Override
     public void onClick(View view) {
-
+        mDelegate.onTapMovie(mMovie);
     }
 }
